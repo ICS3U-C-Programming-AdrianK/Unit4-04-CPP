@@ -30,6 +30,9 @@ int main() {
         try {
             guessNumberInt = std::stoi(guessNumberStr);
             if (guessNumberInt >= 0 && guessNumberInt <= 9) {
+                if (guessNumberInt != randomNumber) {
+                    std::cout << "That is not the correct number . Try again";
+                }
             } else {
                 std::cout << guessNumberInt << " is off range.Please try again";
                 std::cout << "\n";
